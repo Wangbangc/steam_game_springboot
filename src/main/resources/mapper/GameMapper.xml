@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.GameMapper">
+    <!-- 定义结果映射 -->
+    <resultMap id="gameResultMap" type="com.example.demo.model.Game">
+        <result property="gameId" column="game_id"/>
+        <result property="name" column="name"/>
+        <result property="developer" column="developer"/>
+        <result property="publisher" column="publisher"/>
+        <result property="platforms" column="platforms"/>
+        <result property="requiredAge" column="required_age"/>
+        <result property="categories" column="categories"/>
+        <result property="positiveRatings" column="positive_ratings"/>
+        <result property="negativeRatings" column="negative_ratings"/>
+        <result property="averagePlaytime" column="average_playtime"/>
+        <result property="medianPlaytime" column="median_playtime"/>
+        <result property="owners" column="owners"/>
+        <result property="price" column="price"/>
+    </resultMap>
+
+    <!-- 使用结果映射 -->
+    <select id="selectAllGames" resultMap="gameResultMap">
+        SELECT * FROM games_cleaned;
+    </select>
+
+
+</mapper>

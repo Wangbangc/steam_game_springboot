@@ -1,7 +1,10 @@
 package com.example.demo.mapper;
 
 import com.example.demo.model.Game;
-import org.apache.ibatis.annotations.*;
+import com.example.demo.model.GameTypeStatistics;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.ResultMap;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -9,9 +12,8 @@ import java.util.List;
 public interface GameMapper {
 
 
-
     @ResultMap("gameResultMap") // 使用结果映射
     List<Game> selectAllGames();
 
-    // 你的方法定义
+    List<GameTypeStatistics> selectAllGameType();
 }

@@ -1,5 +1,6 @@
 package com.example.demo.service.impl;
 
+import com.example.demo.model.GameTypeStatistics;
 import com.example.demo.mapper.GameMapper;
 import com.example.demo.model.Game;
 import com.example.demo.service.GameService;
@@ -21,4 +22,9 @@ public class GameServiceImpl implements GameService {
         return new TransmissionInfo("success", "Games retrieved successfully", games);
     }
 
+    @Override
+    public TransmissionInfo selectAllGameType() {
+        List<GameTypeStatistics> gameTypeStatisticsList = gameMapper.selectAllGameType();
+        return new TransmissionInfo("success", "Game types retrieved successfully", gameTypeStatisticsList);
+    }
 }

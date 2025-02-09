@@ -20,11 +20,19 @@
         <result property="owners" column="owners"/>
         <result property="price" column="price"/>
     </resultMap>
+    <resultMap id="gameTypeStatisticsResultMap" type="com.example.demo.model.GameTypeStatistics">
+        <result property="category" column="category"/>
+        <result property="gameCount" column="game_count"/>
+        <result property="averagePlaytime" column="average_playtime"/>
+        <result property="medianPlaytime" column="median_playtime"/>
+        <result property="averagePrice" column="average_price"/>
+    </resultMap>
 
     <!-- 使用结果映射 -->
     <select id="selectAllGames" resultMap="gameResultMap">
         SELECT * FROM games_cleaned;
     </select>
-
-
+    <select id="selectAllGameType" resultMap="gameTypeStatisticsResultMap">
+        SELECT * FROM game_type_statistics
+    </select>
 </mapper>

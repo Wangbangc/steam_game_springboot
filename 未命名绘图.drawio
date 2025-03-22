@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GUBUA1hL_FStrqCnX9At-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="110" width="570" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-2" value="应用层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-3" value="数据可视化（vue.js+&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ECharts&lt;/span&gt;）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="140" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="290" width="570" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-5" value="平台层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-6" value="数据清洗计算，特征提取和数据平台控制（Spingboot+spark）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="460" width="570" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-8" value="数据储存层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-9" value="储存采集数据（mysql）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="480" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="620" width="570" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-11" value="中间件（rabittmq）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-13" value="数据爬取和数据转换（Flink）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GUBUA1hL_FStrqCnX9At-14" value="数据采集层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
